@@ -4,7 +4,15 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+}) //Decorator
+
 export class AppComponent {
-  title = 'ToDoList';
+  title: string = 'ToDoList';
+
+  //Constructors run when component is initialized
+  constructor(){
+  }
+
+  
+
 }
