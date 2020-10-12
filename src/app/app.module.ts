@@ -7,6 +7,7 @@ import { ToDosComponent } from './components/to-dos/to-dos.component';
 import { ActionItemComponent } from './components/action-item/action-item.component';
 import { AddItemComponent } from './components/add-item/add-item.component';
 import { ItemDetailsComponent } from './components/item-details/item-details.component';
+import { FilterToDosComponent } from './components/filter-to-dos/filter-to-dos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ItemDetailsComponent } from './components/item-details/item-details.com
     ToDosComponent,
     ActionItemComponent,
     AddItemComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    FilterToDosComponent
   ],
   imports: [
     BrowserModule,

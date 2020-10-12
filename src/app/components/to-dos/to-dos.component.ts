@@ -9,7 +9,7 @@ import { Todo } from '../../models/Todo';
 export class ToDosComponent implements OnInit {
   todos:Todo[]; //calls ToDo model
 
-  clickedAction: Todo;
+  selectedItem: Todo;
   
   constructor() { }
 
