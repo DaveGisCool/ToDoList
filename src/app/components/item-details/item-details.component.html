@@ -1,0 +1,10 @@
+<!--Looks up clicked item and displays action to be edited-->
+<div *ngIf="todo">
+    <br />
+    <h3>Make Changes</h3>
+    <div>
+      <label>Edit ToDo Item:
+        <input [(ngModel)]="todo.action" />
+      </label>
+    </div>
+</div>

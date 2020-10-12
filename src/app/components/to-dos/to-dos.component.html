@@ -1,10 +1,13 @@
-<app-add-item (addTodo) = "addTodo($event)"></app-add-item>
+
 <app-action-item 
     *ngFor = "let todo of todos" 
     [todo] = "todo"
     (removeTodo) = "removeTodo($event)"
+    (click) = "onClick(todo)"
     > 
     <!--loop through action-items and display info-->
     <li> {{ todo.action }} </li>
 </app-action-item>
+<app-add-item (addTodo) = "addTodo($event)"></app-add-item>
+<app-item-details [todo]="selectedItem"></app-item-details>
 

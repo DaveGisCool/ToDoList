@@ -29,7 +29,7 @@ export class ActionItemComponent implements OnInit {
   }
 
   onRemove(todo) {
-    this.removeTodo.emit(todo);
+    this.removeTodo.emit(todo); // removes 
   }
 
   

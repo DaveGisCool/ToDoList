@@ -17,7 +17,7 @@ export class AddItemComponent implements OnInit {
 
   onSubmit() { // add incomplete item to ToDo list
     const todo = {
-      action: this. action,
+      action: this.action,
       completed: false
     }
 

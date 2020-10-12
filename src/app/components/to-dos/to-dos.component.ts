@@ -9,6 +9,8 @@ import { Todo } from '../../models/Todo';
 export class ToDosComponent implements OnInit {
   todos:Todo[]; //calls ToDo model
 
+  clickedAction: Todo;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -21,7 +23,7 @@ export class ToDosComponent implements OnInit {
       {
         id: 2,
         action: 'Complete something on list',
-        complete: false
+        complete: true
       },
       {
         id:3,
@@ -31,9 +33,13 @@ export class ToDosComponent implements OnInit {
     ]
   }
 
+  onClick(todo: Todo): void {
+    this.selectedItem = todo;
+  }
+
   removeTodo(todo:Todo) {
     //return all items without this items id
-    this.todos = this.todos.filter(index => index.id !== todo.id); 
+    this.todos = this.todos.filter(index => index.action !== todo.action); 
   }
 
   addTodo(todo:Todo) {
